@@ -9,3 +9,4 @@
 /home/kartikay/Desktop/wks/install/share/comm_test/cmake/comm_testConfig-version.cmake
 /home/kartikay/Desktop/wks/install/share/comm_test/package.xml
 /home/kartikay/Desktop/wks/install/lib/comm_test/keyboard_publisher
+/home/kartikay/Desktop/wks/install/lib/comm_test/keyboard_subscriber

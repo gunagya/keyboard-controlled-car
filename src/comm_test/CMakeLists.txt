@@ -21,3 +21,6 @@ add_dependencies(subscriber comm_test_generate_messages_cpp)
 
 catkin_install_python(PROGRAMS bin/keyboard_publisher
 DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
+catkin_install_python(PROGRAMS bin/keyboard_subscriber
+DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

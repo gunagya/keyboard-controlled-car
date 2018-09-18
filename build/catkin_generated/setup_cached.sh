@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/kartikay/Desktop/wks/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/kartikay/Desktop/wks/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/kartikay/Desktop/wks/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/kartikay/Desktop/wks/build"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/kartikay/Desktop/wks/devel/share/common-lisp"
 export ROS_PACKAGE_PATH="/home/kartikay/Desktop/wks/src:$ROS_PACKAGE_PATH"
