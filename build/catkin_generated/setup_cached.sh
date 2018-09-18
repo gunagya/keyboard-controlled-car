@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/kartikay/Desktop/wks/devel:$CMAKE_PREFIX_PATH"
 export PWD="/home/kartikay/Desktop/wks/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/kartikay/Desktop/wks/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/kartikay/Desktop/wks/src:$ROS_PACKAGE_PATH"

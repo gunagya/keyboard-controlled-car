@@ -47,3 +47,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comm_test" TYPE FILE FILES "/home/kartikay/Desktop/wks/src/comm_test/package.xml")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/comm_test" TYPE PROGRAM FILES "/home/kartikay/Desktop/wks/build/comm_test/catkin_generated/installspace/keyboard_publisher")
+endif()
+
