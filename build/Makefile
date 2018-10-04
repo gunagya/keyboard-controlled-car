@@ -504,6 +504,19 @@ key_to_ard/fast:
 .PHONY : key_to_ard/fast
 
 #=============================================================================
+# Target rules for targets named keyboard_subcriber_in_c
+
+# Build rule for target.
+keyboard_subcriber_in_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 keyboard_subcriber_in_c
+.PHONY : keyboard_subcriber_in_c
+
+# fast build rule for target.
+keyboard_subcriber_in_c/fast:
+	$(MAKE) -f comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build.make comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build
+.PHONY : keyboard_subcriber_in_c/fast
+
+#=============================================================================
 # Target rules for targets named subscriber
 
 # Build rule for target.
@@ -555,6 +568,7 @@ help:
 	@echo "... publisher"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... key_to_ard"
+	@echo "... keyboard_subcriber_in_c"
 	@echo "... subscriber"
 .PHONY : help
 

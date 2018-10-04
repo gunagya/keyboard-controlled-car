@@ -421,6 +421,21 @@ key_to_ard/fast:
 .PHONY : key_to_ard/fast
 
 # Convenience name for target.
+comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/rule:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f CMakeFiles/Makefile2 comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/rule
+.PHONY : comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/rule
+
+# Convenience name for target.
+keyboard_subcriber_in_c: comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/rule
+
+.PHONY : keyboard_subcriber_in_c
+
+# fast build rule for target.
+keyboard_subcriber_in_c/fast:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build.make comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build
+.PHONY : keyboard_subcriber_in_c/fast
+
+# Convenience name for target.
 comm_test/CMakeFiles/subscriber.dir/rule:
 	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f CMakeFiles/Makefile2 comm_test/CMakeFiles/subscriber.dir/rule
 .PHONY : comm_test/CMakeFiles/subscriber.dir/rule
@@ -461,6 +476,33 @@ src/key_to_ard.s: src/key_to_ard.cpp.s
 src/key_to_ard.cpp.s:
 	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/key_to_ard.dir/build.make comm_test/CMakeFiles/key_to_ard.dir/src/key_to_ard.cpp.s
 .PHONY : src/key_to_ard.cpp.s
+
+src/keyboard_subcriber_in_c.o: src/keyboard_subcriber_in_c.cpp.o
+
+.PHONY : src/keyboard_subcriber_in_c.o
+
+# target to build an object file
+src/keyboard_subcriber_in_c.cpp.o:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build.make comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/src/keyboard_subcriber_in_c.cpp.o
+.PHONY : src/keyboard_subcriber_in_c.cpp.o
+
+src/keyboard_subcriber_in_c.i: src/keyboard_subcriber_in_c.cpp.i
+
+.PHONY : src/keyboard_subcriber_in_c.i
+
+# target to preprocess a source file
+src/keyboard_subcriber_in_c.cpp.i:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build.make comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/src/keyboard_subcriber_in_c.cpp.i
+.PHONY : src/keyboard_subcriber_in_c.cpp.i
+
+src/keyboard_subcriber_in_c.s: src/keyboard_subcriber_in_c.cpp.s
+
+.PHONY : src/keyboard_subcriber_in_c.s
+
+# target to generate assembly for a file
+src/keyboard_subcriber_in_c.cpp.s:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/build.make comm_test/CMakeFiles/keyboard_subcriber_in_c.dir/src/keyboard_subcriber_in_c.cpp.s
+.PHONY : src/keyboard_subcriber_in_c.cpp.s
 
 src/publisher.o: src/publisher.cpp.o
 
@@ -525,9 +567,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -544,12 +586,16 @@ help:
 	@echo "... publisher"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... key_to_ard"
+	@echo "... keyboard_subcriber_in_c"
 	@echo "... install/strip"
 	@echo "... subscriber"
 	@echo "... install/local"
 	@echo "... src/key_to_ard.o"
 	@echo "... src/key_to_ard.i"
 	@echo "... src/key_to_ard.s"
+	@echo "... src/keyboard_subcriber_in_c.o"
+	@echo "... src/keyboard_subcriber_in_c.i"
+	@echo "... src/keyboard_subcriber_in_c.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
