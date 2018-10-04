@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -99,6 +88,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
@@ -194,21 +194,6 @@ roscpp_generate_messages_py: comm_test/CMakeFiles/roscpp_generate_messages_py.di
 roscpp_generate_messages_py/fast:
 	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make comm_test/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f CMakeFiles/Makefile2 comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 comm_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
@@ -406,6 +391,36 @@ publisher/fast:
 .PHONY : publisher/fast
 
 # Convenience name for target.
+comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f CMakeFiles/Makefile2 comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+comm_test/CMakeFiles/key_to_ard.dir/rule:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f CMakeFiles/Makefile2 comm_test/CMakeFiles/key_to_ard.dir/rule
+.PHONY : comm_test/CMakeFiles/key_to_ard.dir/rule
+
+# Convenience name for target.
+key_to_ard: comm_test/CMakeFiles/key_to_ard.dir/rule
+
+.PHONY : key_to_ard
+
+# fast build rule for target.
+key_to_ard/fast:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/key_to_ard.dir/build.make comm_test/CMakeFiles/key_to_ard.dir/build
+.PHONY : key_to_ard/fast
+
+# Convenience name for target.
 comm_test/CMakeFiles/subscriber.dir/rule:
 	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f CMakeFiles/Makefile2 comm_test/CMakeFiles/subscriber.dir/rule
 .PHONY : comm_test/CMakeFiles/subscriber.dir/rule
@@ -419,6 +434,33 @@ subscriber: comm_test/CMakeFiles/subscriber.dir/rule
 subscriber/fast:
 	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/subscriber.dir/build.make comm_test/CMakeFiles/subscriber.dir/build
 .PHONY : subscriber/fast
+
+src/key_to_ard.o: src/key_to_ard.cpp.o
+
+.PHONY : src/key_to_ard.o
+
+# target to build an object file
+src/key_to_ard.cpp.o:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/key_to_ard.dir/build.make comm_test/CMakeFiles/key_to_ard.dir/src/key_to_ard.cpp.o
+.PHONY : src/key_to_ard.cpp.o
+
+src/key_to_ard.i: src/key_to_ard.cpp.i
+
+.PHONY : src/key_to_ard.i
+
+# target to preprocess a source file
+src/key_to_ard.cpp.i:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/key_to_ard.dir/build.make comm_test/CMakeFiles/key_to_ard.dir/src/key_to_ard.cpp.i
+.PHONY : src/key_to_ard.cpp.i
+
+src/key_to_ard.s: src/key_to_ard.cpp.s
+
+.PHONY : src/key_to_ard.s
+
+# target to generate assembly for a file
+src/key_to_ard.cpp.s:
+	cd /home/kartikay/Desktop/wks/build && $(MAKE) -f comm_test/CMakeFiles/key_to_ard.dir/build.make comm_test/CMakeFiles/key_to_ard.dir/src/key_to_ard.cpp.s
+.PHONY : src/key_to_ard.cpp.s
 
 src/publisher.o: src/publisher.cpp.o
 
@@ -482,12 +524,11 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... rebuild_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -501,9 +542,14 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... publisher"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... key_to_ard"
 	@echo "... install/strip"
 	@echo "... subscriber"
 	@echo "... install/local"
+	@echo "... src/key_to_ard.o"
+	@echo "... src/key_to_ard.i"
+	@echo "... src/key_to_ard.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"

@@ -19,6 +19,10 @@ add_executable(subscriber src/subscriber.cpp)
 target_link_libraries(subscriber ${catkin_LIBRARIES})
 add_dependencies(subscriber comm_test_generate_messages_cpp)
 
+add_executable(key_to_ard src/key_to_ard.cpp)
+target_link_libraries(key_to_ard ${catkin_LIBRARIES})
+add_dependencies(key_to_ard comm_test_generate_messages_cpp)
+
 catkin_install_python(PROGRAMS bin/keyboard_publisher
 DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 

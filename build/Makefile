@@ -309,19 +309,6 @@ roscpp_generate_messages_py/fast:
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -491,6 +478,32 @@ publisher/fast:
 .PHONY : publisher/fast
 
 #=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make comm_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named key_to_ard
+
+# Build rule for target.
+key_to_ard: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 key_to_ard
+.PHONY : key_to_ard
+
+# fast build rule for target.
+key_to_ard/fast:
+	$(MAKE) -f comm_test/CMakeFiles/key_to_ard.dir/build.make comm_test/CMakeFiles/key_to_ard.dir/build
+.PHONY : key_to_ard/fast
+
+#=============================================================================
 # Target rules for targets named subscriber
 
 # Build rule for target.
@@ -527,7 +540,6 @@ help:
 	@echo "... gtest_main"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -541,6 +553,8 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... publisher"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... key_to_ard"
 	@echo "... subscriber"
 .PHONY : help
 

@@ -3,18 +3,18 @@
 import pygame, sys
 import pygame.locals
 import rospy
-from std_msgs.msg import Int32
+from std_msgs.msg import Int16
 
 pygame.init()
 BLACK = (0,0,0)
-WIDTH = 1280
-HEIGHT = 1024
+WIDTH = 800
+HEIGHT = 600
 windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), 0, 32)
 
 windowSurface.fill(BLACK)
 
-pub_down = rospy.Publisher('keydown_pub', Int32, queue_size=10)
-pub_up = rospy.Publisher('keyup_pub', Int32, queue_size=10)
+pub_down = rospy.Publisher('keydown_pub', Int16, queue_size=10)
+pub_up = rospy.Publisher('keyup_pub', Int16, queue_size=10)
 rospy.init_node('keyboard_publisher')
 
 dict_values = {
