@@ -6,31 +6,35 @@ ros::NodeHandle nh;
 int v1 = 0;
 void intCallback1(const std_msgs::Int16& value){
     v1 = value.data;
-    //ROS_INFO("V1: [%d]", v1);
+    String sv1 = String(v1);
+    nh.loginfo(sv1);
 }
 
 int v2 = 0;
 void intCallback2(const std_msgs::Int16& value){
     v2 = value.data;
-    //ROS_INFO("V2: [%d]", v2);
+    String sv2 = String(v2);
+    nh.loginfo(sv2);
 }
 
 int v3 = 0;
 void intCallback3(const std_msgs::Int16& value){
     v3 = value.data;
-    //ROS_INFO("V3: [%d]", v3);
+    String sv3 = String(v3);
+    nh.loginfo(sv3);
 }
 
 int v4 = 0;
 void intCallback4(const std_msgs::Int16& value){
     v4 = value.data;
-    //ROS_INFO("V4: [%d]", v4);
+    String sv4 = String(v4);
+    nh.loginfo(sv4);
 }
 
-ros::Subscriber<std_msgs::Int16> sub1("/random_number1", intCallback1);
-ros::Subscriber<std_msgs::Int16> sub2("/random_number2", intCallback2);
-ros::Subscriber<std_msgs::Int16> sub3("/random_number3", intCallback3);
-ros::Subscriber<std_msgs::Int16> sub4("/random_number4", intCallback4);
+ros::Subscriber<std_msgs::Int16> sub1("lspd", intCallback1);
+ros::Subscriber<std_msgs::Int16> sub2("rspd", intCallback2);
+ros::Subscriber<std_msgs::Int16> sub3("dir", intCallback3);
+ros::Subscriber<std_msgs::Int16> sub4("dur", intCallback4);
 
 void setup() {
   // put your setup code here, to run once:
