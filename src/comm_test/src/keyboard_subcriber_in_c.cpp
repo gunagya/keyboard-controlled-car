@@ -19,7 +19,7 @@ void assignValue (int keycode, int* lspd_val, int* rspd_val, int* dir_val, int* 
 			*dir_val = 1; 
 			w_key = true;			
 			break;
-		case 2: *lspd_val = 32; //64
+		case 2: *lspd_val = -64; //64
 			*rspd_val = 64; //128
 			*dir_val = 1;
 			a_key = true;			
@@ -30,7 +30,7 @@ void assignValue (int keycode, int* lspd_val, int* rspd_val, int* dir_val, int* 
 			s_key = true;			
 			break;
 		case 4: *lspd_val = 64;
-			*rspd_val = 32;
+			*rspd_val = -64;
 			*dir_val = 1; 
 			d_key = true;			
 			break;
